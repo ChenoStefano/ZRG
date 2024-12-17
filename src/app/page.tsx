@@ -1,4 +1,4 @@
-import Header from './components/header'
+
 import DynamicHeader from './components/dynamic-header'
 import FeaturedProducts from './components/featured-products'
 import WhyChooseUs from './components/why-choose-us'
