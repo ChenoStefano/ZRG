@@ -2,9 +2,9 @@ import { MapPin, Phone, Mail } from 'lucide-react'
 
 export default function Location() {
   return (
-    <section id="location" className="py-12 md:py-20 bg-white">
+    <section id="location" className="py-12 md:py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-8 md:mb-12">Nuestra Ubicación</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 dark:text-blue-100 text-center mb-8 md:mb-12">Nuestra Ubicación</h2>
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <iframe
@@ -17,19 +17,19 @@ export default function Location() {
             ></iframe>
           </div>
           <div className="w-full md:w-1/2 md:pl-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-blue-900 mb-4">Información de Contacto</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-900 dark:text-blue-100 mb-4">Información de Contacto</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <MapPin className="text-blue-600 mr-2" size={20} />
-                <span className="text-sm md:text-base">Calle 137, N°137 - Berazategui</span>
+                <MapPin className="text-blue-600 dark:text-blue-400 mr-2" size={20} />
+                <span className="text-sm md:text-base text-blue-800 dark:text-blue-200">Calle 137, N°137 - Berazategui</span>
               </li>
               <li className="flex items-center">
                 <Phone className="text-blue-600 mr-2" size={20} />
-                <span className="text-sm md:text-base">+54 11 5039-8570</span>
+                <span className="text-sm md:text-base text-blue-800 dark:text-blue-200">+54 11 5039-8570</span>
               </li>
               <li className="flex items-center">
                 <Mail className="text-blue-600 mr-2" size={20} />
-                <span className="text-sm md:text-base">info@tuempresa.com</span>
+                <span className="text-sm md:text-base text-blue-800 dark:text-blue-200">info@tuempresa.com</span>
               </li>
             </ul>
           </div>

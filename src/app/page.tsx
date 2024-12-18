@@ -1,4 +1,3 @@
-
 import DynamicHeader from './components/dynamic-header'
 import FeaturedProducts from './components/featured-products'
 import WhyChooseUs from './components/why-choose-us'
@@ -7,42 +6,92 @@ import Location from './components/location'
 import ContactForm from './components/contact-form'
 import Footer from './components/footer'
 import WhatsAppBubble from './components/whatsapp-bubble'
+import AnimatedSection from './components/animated-section'
+import BrandCarousel from './components/brand-carousel'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'TuMarca - Soluciones Informáticas a tu Medida',
-  description: 'Especialistas en armado de computadoras personales, empresariales y administrativas. Ofrecemos soluciones informáticas personalizadas para satisfacer tus necesidades.',
-  keywords: 'computadoras, PC, armado de computadoras, soluciones informáticas, hardware, software',
+  title: 'ZRGaming - Soluciones Informáticas Personalizadas',
+  description: 'Especialistas en armado de computadoras personales, empresariales y administrativas. Ofrecemos soluciones informáticas de alta calidad para satisfacer tus necesidades específicas.',
+  keywords: 'computadoras, PC gaming, armado de computadoras, soluciones informáticas, hardware, software, ZRGaming',
+  openGraph: {
+    title: 'ZRGaming - Soluciones Informáticas Personalizadas',
+    description: 'Especialistas en armado de computadoras personales, empresariales y administrativas.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ZRGaming - Soluciones Informáticas',
+      },
+    ],
+  },
 }
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <DynamicHeader />
       <main>
-        <section id="home" className="py-12 md:py-20 bg-blue-50">
-          <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-blue-900 text-center mb-4 md:mb-6">
-              Soluciones Informáticas a tu Medida
-            </h1>
-            <p className="text-lg md:text-xl text-blue-800 text-center mb-6 md:mb-8">
-              Especialistas en armado de computadoras personales, empresariales y administrativas
-            </p>
-            <div className="flex justify-center">
-              <a
-                href="#contact"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 w-full md:w-auto text-center"
-              >
-                Contáctanos Ahora
-              </a>
+        <AnimatedSection>
+          <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-20">
+            <div className="container mx-auto px-4">
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                  <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
+                    GAMING
+                    <br />
+                    HARDWARE
+                    <br />
+                    SOLUTIONS
+                  </h1>
+                </div>
+                <div>
+                  <div className="space-y-6">
+                    <h2>
+                      <span className="block text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                        UNA PLATAFORMA.
+                      </span>
+                      <span className="block text-3xl font-bold text-blue-600">
+                        RENDIMIENTO
+                        <br />
+                        INIGUALABLE.
+                      </span>
+                    </h2>
+                    <p className="text-lg text-gray-600 dark:text-gray-300">
+                      Especialistas en armado de computadoras personales, empresariales y administrativas. 
+                      Ofrecemos soluciones informáticas de alta calidad para satisfacer tus necesidades específicas.
+                    </p>
+                    <div>
+                      <a
+                        href="#contact"
+                        className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                      >
+                        Contáctanos Ahora
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <BrandCarousel />
             </div>
-          </div>
-        </section>
-        <FeaturedProducts />
-        <WhyChooseUs />
-        <Testimonials />
-        <Location />
-        <ContactForm />
+          </section>
+        </AnimatedSection>
+        <AnimatedSection>
+          <FeaturedProducts />
+        </AnimatedSection>
+        <AnimatedSection>
+          <WhyChooseUs />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Testimonials />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Location />
+        </AnimatedSection>
+        <AnimatedSection>
+          <ContactForm />
+        </AnimatedSection>
       </main>
       <Footer />
       <WhatsAppBubble />
