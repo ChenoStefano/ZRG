@@ -1,7 +1,7 @@
 wachin instala esto:
 
 # Actualizar next a la última versión
-npm install next@latest react@latest react-dom@latest\
+npm install next@latest react@latest react-dom@latest
 
 npm install framer-motion react-icons lucide-react
 
