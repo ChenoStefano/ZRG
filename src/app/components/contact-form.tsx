@@ -41,7 +41,7 @@ export default function ContactForm() {
       } else {
         setError('Error al enviar el mensaje. Por favor, intenta nuevamente.')
       }
-    } catch (_) {
+    } catch {
       setError('Error al enviar el mensaje. Por favor, intenta nuevamente.')
     } finally {
       setEnviando(false)
