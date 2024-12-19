@@ -1,0 +1,8 @@
+wachin instala esto:
+
+# Actualizar next a la última versión
+npm install next@latest react@latest react-dom@latest\
+
+npm install framer-motion react-icons lucide-react
+
+tenes que crear un .env.local y poner la api key de resend y cambiar el correo de contacto en el api/form/route.js

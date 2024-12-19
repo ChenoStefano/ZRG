@@ -13,16 +13,29 @@ export function DarkModeProvider({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true'
-    setDarkMode(isDarkMode)
-    document.documentElement.classList.toggle('dark', isDarkMode)
+    // Limpiar cualquier clase dark existente al inicio
+    document.documentElement.classList.remove('dark')
+    
+    // Verificar localStorage
+    const savedMode = localStorage.getItem('darkMode')
+    if (savedMode) {
+      const isDark = savedMode === 'true'
+      setDarkMode(isDark)
+      document.documentElement.classList.toggle('dark', isDark)
+    }
   }, [])
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
     setDarkMode(newDarkMode)
-    localStorage.setItem('darkMode', newDarkMode.toString())
-    document.documentElement.classList.toggle('dark', newDarkMode)
+    localStorage.setItem('darkMode', String(newDarkMode))
+    
+    // Asegurarnos de que la clase se actualice correctamente
+    if (newDarkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
   }
 
   return (

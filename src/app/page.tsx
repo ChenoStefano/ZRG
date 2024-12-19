@@ -1,3 +1,5 @@
+'use client'
+
 import DynamicHeader from './components/dynamic-header'
 import FeaturedProducts from './components/featured-products'
 import WhyChooseUs from './components/why-choose-us'
@@ -8,29 +10,10 @@ import Footer from './components/footer'
 import WhatsAppBubble from './components/whatsapp-bubble'
 import AnimatedSection from './components/animated-section'
 import BrandCarousel from './components/brand-carousel'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'ZRGaming - Soluciones Informáticas Personalizadas',
-  description: 'Especialistas en armado de computadoras personales, empresariales y administrativas. Ofrecemos soluciones informáticas de alta calidad para satisfacer tus necesidades específicas.',
-  keywords: 'computadoras, PC gaming, armado de computadoras, soluciones informáticas, hardware, software, ZRGaming',
-  openGraph: {
-    title: 'ZRGaming - Soluciones Informáticas Personalizadas',
-    description: 'Especialistas en armado de computadoras personales, empresariales y administrativas.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'ZRGaming - Soluciones Informáticas',
-      },
-    ],
-  },
-}
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen">
       <DynamicHeader />
       <main>
         <AnimatedSection>
