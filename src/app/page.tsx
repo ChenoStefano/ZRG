@@ -3,7 +3,6 @@
 import DynamicHeader from './components/dynamic-header'
 import FeaturedProducts from './components/featured-products'
 import WhyChooseUs from './components/why-choose-us'
-import Testimonials from './components/testimonials'
 import Location from './components/location'
 import ContactForm from './components/contact-form'
 import Footer from './components/footer'
@@ -65,9 +64,6 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <WhyChooseUs />
-        </AnimatedSection>
-        <AnimatedSection>
-          <Testimonials />
         </AnimatedSection>
         <AnimatedSection>
           <Location />

@@ -1,10 +1,11 @@
 import Image from 'next/image'
 
+
 export default function FeaturedProducts() {
   const products = [
-    { name: 'PC Personal', image: '/placeholder.svg?height=300&width=300', description: 'Ideal para uso doméstico y estudiantes' },
-    { name: 'PC Empresarial', image: '/placeholder.svg?height=300&width=300', description: 'Potencia y rendimiento para tu negocio' },
-    { name: 'PC Administrativa', image: '/placeholder.svg?height=300&width=300', description: 'Optimizada para tareas de oficina' },
+    { name: 'PC Gamer', image: '/img-gamer.png', description: 'Ideal para gamers' },
+    { name: 'Actualizaciones', image: '/img-ssd.png', description: 'Actualizaciones de hardware y software' },
+    { name: 'PC Administrativa', image: '/img-adm.png', description: 'Optimizada para tareas de oficina y administrativas' },
   ]
 
   return (
