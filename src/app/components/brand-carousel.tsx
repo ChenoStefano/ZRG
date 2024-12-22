@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export default function BrandCarousel() {
   const brands = [
-    { name: 'AMD', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'Intel', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'NVIDIA', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'ASUS', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'MSI', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'Corsair', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'Razer', logo: '/placeholder.svg?height=50&width=120' },
-    { name: 'Logitech', logo: '/placeholder.svg?height=50&width=120' },
+    { name: 'AMD', logo: '/amd.svg?height=50&width=120' },
+    { name: 'Intel', logo: '/intel.svg?height=50&width=120' },
+    { name: 'NVIDIA', logo: '/nvidia.svg?height=50&width=120' },
+    { name: 'ASUS', logo: '/asus.svg?height=50&width=120' },
+    { name: 'MSI', logo: '/msi.svg?height=50&width=120' },
+    { name: 'Corsair', logo: '/corsair.svg?height=50&width=120' },
+    { name: 'Razer', logo: '/razer.svg?height=50&width=120' },
+    { name: 'Logitech', logo: '/logitech.svg?height=50&width=120' },
   ]
 
   return (
