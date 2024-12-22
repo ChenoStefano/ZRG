@@ -1,11 +1,20 @@
 import { Facebook, Instagram, PhoneIcon as WhatsApp } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md scroll-smooth">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600">ZRGaming</div>
+        <Link href="/">
+          <Image 
+            src="/logo.png"
+            alt="ZRGaming Logo"
+            width={150}
+            height={50}
+            className="cursor-pointer"
+          />
+        </Link>
         <nav>
           <ul className="flex space-x-6">
             <li>

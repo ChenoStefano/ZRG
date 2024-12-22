@@ -21,19 +21,17 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div>
                   <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
-                    GAMING
+                    SOLUCIONES
                     <br />
                     HARDWARE
                     <br />
-                    SOLUTIONS
+                    SOFTWARE
+                    <br />
                   </h1>
                 </div>
                 <div>
                   <div className="space-y-6">
                     <h2>
-                      <span className="block text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                        UNA PLATAFORMA.
-                      </span>
                       <span className="block text-3xl font-bold text-blue-600">
                         RENDIMIENTO
                         <br />
@@ -42,7 +40,7 @@ export default function Home() {
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-300">
                       Especialistas en armado de computadoras personales, empresariales y administrativas. 
-                      Ofrecemos soluciones informáticas de alta calidad para satisfacer tus necesidades específicas.
+                      Ofrecemos soluciones tecnlogicas de alta calidad para satisfacer tus necesidades específicas.
                     </p>
                     <div>
                       <a
