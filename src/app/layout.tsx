@@ -5,6 +5,9 @@ import { DarkModeProvider } from './contexts/DarkModeContext'
 export const metadata: Metadata = {
   title: 'ZRGaming - Soluciones Informáticas Personalizadas',
   description: 'Especialistas en armado de computadoras personales, empresariales y administrativas.',
+  icons: {
+    icon: '/logo.ico',
+  },
 }
 
 export default function RootLayout({
