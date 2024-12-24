@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
@@ -9,37 +9,34 @@ import Image from 'next/image'
 
 export default function DynamicHeader() {
   const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
-    let lastScrollY = window.scrollY;
+     let timeoutId: NodeJS.Timeout;
 
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+     const handleScroll = () => {
+       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
+       if (currentScrollY > 0) {
+         setIsVisible(false);
+       } else {
+         setIsVisible(true);
+       }
 
-      lastScrollY = currentScrollY;
-      clearTimeout(timeoutId);
+       clearTimeout(timeoutId);
 
-      timeoutId = setTimeout(() => {
-        setIsVisible(true);
-      }, 500); // Now the header will reappear almost instantly after scrolling stops
-    };
+       timeoutId = setTimeout(() => {
+         setIsVisible(true);
+       }, 500);
+     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      if (timeoutId) clearTimeout(timeoutId);
-    };
-  }, []);
+     return () => {
+       window.removeEventListener('scroll', handleScroll);
+       if (timeoutId) clearTimeout(timeoutId);
+     };
+   }, []);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
