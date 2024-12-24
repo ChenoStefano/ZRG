@@ -66,8 +66,8 @@ export default function DynamicHeader() {
             <Image
               src="/logo.png"
               alt="ZRGaming Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="mr-2 h-10 w-auto"
               priority
             />
