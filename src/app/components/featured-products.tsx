@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function FeaturedProducts() {
   const products = [
-    { name: 'PC Gamer', image: '/img-gamer.png?height=300&width=300', description: 'Ideal para llegar al maximo el rendimiento de tus juegos' },
+    { name: 'PC Gamer', image: '/img-gamer.png?height=300&width=300', description: 'Ideal para llevar al maximo el rendimiento de tus juegos' },
     { name: 'Actualizaciones', image: '/img-ssd.png?height=300&width=300', description: 'Actualizaciones de hardware y software' },
     { name: 'PC Administrativa', image: '/img-adm.png?height=300&width=300', description: 'Optimizada para tareas de oficina y administrativas' },
   ]
