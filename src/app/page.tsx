@@ -9,11 +9,13 @@ import Footer from './components/footer'
 import WhatsAppBubble from './components/whatsapp-bubble'
 import AnimatedSection from './components/animated-section'
 import BrandCarousel from './components/brand-carousel'
+import PromoPopup from './components/promo-popup'
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <DynamicHeader />
+       <PromoPopup />
       <main>
         <AnimatedSection>
           <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-20">
