@@ -9,7 +9,7 @@ export default function SocialPopup() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true)
-    }, 5000) // Show popup after 5 seconds
+    }, 2000) // Reducido a 2 segundos
 
     return () => clearTimeout(timer)
   }, [])
@@ -24,20 +24,21 @@ export default function SocialPopup() {
         onClick={() => setIsVisible(false)}
       />
       
-      {/* Popup */}
+      {/* Monitor-styled Popup */}
       <div 
         className={`
           fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-          w-[90%] max-w-2xl bg-white rounded-lg shadow-2xl z-50
+          w-[90%] max-w-2xl z-50
           transition-all duration-500 ease-out
           ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}
         `}
       >
-        <div className="relative p-8">
+        {/* Monitor Screen */}
+        <div className="bg-white rounded-lg shadow-2xl p-8 border-[16px] border-gray-800 relative">
           {/* Close button */}
           <button
             onClick={() => setIsVisible(false)}
-            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-xl"
+            className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
             aria-label="Cerrar"
           >
             ×
@@ -73,6 +74,13 @@ export default function SocialPopup() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Monitor Stand */}
+        <div className="mx-auto" style={{ width: '60%' }}>
+          <div className="h-4 bg-gray-800 rounded-b-lg"></div>
+          <div className="h-16 w-24 bg-gray-800 mx-auto rounded-b-lg"></div>
+          <div className="h-2 w-32 bg-gray-800 mx-auto rounded-lg"></div>
         </div>
       </div>
     </>
