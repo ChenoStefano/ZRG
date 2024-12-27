@@ -9,6 +9,7 @@ import Footer from './components/footer'
 import WhatsAppBubble from './components/whatsapp-bubble'
 import AnimatedSection from './components/animated-section'
 import BrandCarousel from './components/brand-carousel'
+import SocialPopup from './components/social-popup'
 
 export default function Home() {
   return (
@@ -72,7 +73,7 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppBubble />
+      <SocialPopup />
     </div>
   )
 }
-
