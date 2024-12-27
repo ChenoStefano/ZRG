@@ -29,14 +29,17 @@ export default function SocialPopup() {
         >
           <FaWhatsapp className="text-white text-2xl" />
         </a>
-        <a
-          href="https://www.instagram.com/zr.gaming_pc?igsh=eHBsd3B0YXM3cjY3"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors duration-300"
-        >
-          <FaInstagram className="text-white text-2xl" />
-        </a>
+       <a
+        href="https://www.instagram.com/zr.gaming_pc?igsh=eHBsd3B0YXM3cjY3"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-12 h-12 rounded-full hover:opacity-90 transition-opacity duration-300"
+        style={{
+          background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)'
+        }}
+      >
+        <FaInstagram className="text-white text-2xl" />
+      </a>
       </div>
       <button
         onClick={() => setIsVisible(false)}
