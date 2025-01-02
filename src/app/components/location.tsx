@@ -29,7 +29,7 @@ export default function Location() {
               </li>
               <li className="flex items-center">
                 <Mail className="text-blue-600 mr-2" size={20} />
-                <span className="text-sm md:text-base text-blue-800 dark:text-blue-200">Zr.gaming_pc@gmail.com</span>
+                <span className="text-sm md:text-base text-blue-800 dark:text-blue-200">zr.gaming_pc@gmail.com</span>
               </li>
             </ul>
           </div>

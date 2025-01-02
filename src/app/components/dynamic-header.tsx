@@ -5,36 +5,38 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import ThemeToggle from './theme-toggle'
+import Image from 'next/image'
 
 export default function DynamicHeader() {
   const [isVisible, setIsVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      if (currentScrollY > lastScrollY) {
-        setIsVisible(false)
-      } else {
-        setIsVisible(true)
-      }
-      setLastScrollY(currentScrollY)
-    }
+     let timeoutId: NodeJS.Timeout;
 
-    let timeoutId: NodeJS.Timeout
+     const handleScroll = () => {
+       const currentScrollY = window.scrollY;
 
-    const throttledHandleScroll = () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId)
-      }
+       if (currentScrollY > 0) {
+         setIsVisible(false);
+       } else {
+         setIsVisible(true);
+       }
 
-      timeoutId = setTimeout(handleScroll, 100)
-    }
+       clearTimeout(timeoutId);
 
-    window.addEventListener('scroll', throttledHandleScroll)
-    return () => window.removeEventListener('scroll', throttledHandleScroll)
-  }, [lastScrollY])
+       timeoutId = setTimeout(() => {
+         setIsVisible(true);
+       }, 500);
+     };
+
+     window.addEventListener('scroll', handleScroll, { passive: true });
+
+     return () => {
+       window.removeEventListener('scroll', handleScroll);
+       if (timeoutId) clearTimeout(timeoutId);
+     };
+   }, []);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
@@ -50,10 +52,27 @@ export default function DynamicHeader() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-md transition-all duration-300 z-50 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <header className={`fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 shadow-md transition-all duration-300 ease-in-out z-50 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors duration-300">ZRGaming</div>
+          <Link 
+            href="/" 
+            className="flex items-center"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
+            <Image
+              src="/logo.png"
+              alt="ZRGaming Logo"
+              width={50}
+              height={50}
+              className="mr-2 h-10 w-auto"
+              priority
+            />
+            <span className="text-2xl font-bold text-blue-600 dark:text-blue-400 transition-colors duration-300">ZRGaming</span>
+          </Link>
           <div className="hidden md:flex items-center space-x-6">
             <nav>
               <ul className="flex space-x-6">
