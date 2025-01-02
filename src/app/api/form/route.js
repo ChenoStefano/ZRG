@@ -10,7 +10,7 @@ export async function POST(request) {
 
     const emailData = {
       from: 'onboarding@resend.dev',
-      to: 'sjcheno@hotmail.com', 
+      to: 'zr.gaming.pc25@gmail.com', 
       subject: `Nuevo mensaje de contacto - ${formData.nombre}`,
       html: `
         <div style="padding: 30px; background-color: #f5f5f5; font-family: Arial, sans-serif;">
