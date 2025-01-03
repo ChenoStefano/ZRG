@@ -73,6 +73,7 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppBubble />
+      <PromoPopup />
     </div>
   )
 }
