@@ -1,4 +1,5 @@
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from 'next'
 import { DarkModeProvider } from './contexts/DarkModeContext'
 
