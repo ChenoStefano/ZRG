@@ -1,6 +1,7 @@
 import './globals.css'
 import { Metadata } from 'next'
 import { DarkModeProvider } from './contexts/DarkModeContext'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'ZRGaming - Soluciones Informáticas Personalizadas',
@@ -18,6 +19,22 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <head>
+         {/* Código para Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-735810607"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-735810607');
+          `}
+        </Script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
