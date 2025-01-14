@@ -49,7 +49,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-12 md:py-20 bg-blue-50 dark:bg-gray-800">
+    <section id="contact" className="py-16 md:py-24 bg-gray-900 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 dark:text-blue-100 text-center mb-8 md:mb-12">Contáctanos</h2>
         {mensaje && (
