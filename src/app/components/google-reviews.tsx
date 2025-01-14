@@ -56,7 +56,7 @@ const reviews = [
               <p className="text-gray-300 text-sm">{review.text}</p>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=20&width=60"
+                  src="/google-maps.svg?height=20&width=60"
                   alt="Google"
                   width={60}
                   height={20}
