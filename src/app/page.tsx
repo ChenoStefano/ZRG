@@ -1,7 +1,6 @@
 'use client'
 
 import DynamicHeader from './components/dynamic-header'
-import FeaturedProducts from './components/featured-products'
 import WhyChooseUs from './components/why-choose-us'
 import Location from './components/location'
 import ContactForm from './components/contact-form'
@@ -10,6 +9,8 @@ import WhatsAppBubble from './components/whatsapp-bubble'
 import AnimatedSection from './components/animated-section'
 import BrandCarousel from './components/brand-carousel'
 import PromoPopup from './components/promo-popup'
+import Services from './components/services-productos'
+import GoogleReviews from './components/google-reviews'
 
 export default function Home() {
   return (
@@ -59,7 +60,8 @@ export default function Home() {
           </section>
         </AnimatedSection>
         <AnimatedSection>
-          <FeaturedProducts />
+          <Services/>
+          <GoogleReviews/>
         </AnimatedSection>
         <AnimatedSection>
           <WhyChooseUs />
