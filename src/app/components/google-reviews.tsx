@@ -20,13 +20,14 @@ const reviews = [
 ]
 
 
-  return (
-    <section className="py-12 md:py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-white neon-title">
-          Reseñas de Google
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+return (
+  <section className="py-16 md:py-24 bg-gray-900">
+    <div className="container mx-auto px-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-white neon-title">
+        Reseñas de Google
+      </h2>
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
           {reviews.map((review, index) => (
             <div
               key={index}
@@ -67,7 +68,8 @@ const reviews = [
           ))}
         </div>
       </div>
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
