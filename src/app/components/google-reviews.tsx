@@ -8,14 +8,14 @@ const reviews = [
     date: "hace 5 días",
     rating: 5,
     text: "Atencion 10/10👏🏻",
-    avatar: "public/angelo.png?height=40&width=40"
+    avatar: "/angelo.png?height=40&width=40"
   },
   {
     name: "Ezequiel Rial",
     date: "hace 4 semanas",
     rating: 5,
     text: "10 puntos",
-    avatar: "public/Eze.png?height=40&width=40"
+    avatar: "/Eze.png?height=40&width=40"
   },
 ]
 
