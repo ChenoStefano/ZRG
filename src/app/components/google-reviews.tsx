@@ -4,61 +4,19 @@ import Image from 'next/image'
 export default function GoogleReviews() {
 const reviews = [
   {
-    name: "Carlos Martínez",
-    date: "hace 2 días",
+    name: "ANGELO SEBASTIAN SCOZZARI",
+    date: "hace 5 días",
     rating: 5,
-    text: "Excelente servicio y asesoramiento. Me armaron una PC gaming perfecta para mis necesidades.",
-    avatar: "/placeholder.svg?height=40&width=40"
+    text: "Atencion 10/10👏🏻",
+    avatar: "public/angelo.png?height=40&width=40"
   },
   {
-    name: "Ana López",
-    date: "hace 1 semana",
+    name: "Ezequiel Rial",
+    date: "hace 4 semanas",
     rating: 5,
-    text: "La mejor atención que he recibido. El equipo es muy profesional y conocedor.",
-    avatar: "/placeholder.svg?height=40&width=40"
+    text: "10 puntos",
+    avatar: "public/Eze.png?height=40&width=40"
   },
-  {
-    name: "Miguel Rodríguez",
-    date: "hace 2 semanas",
-    rating: 5,
-    text: "Increíble relación calidad-precio. Mi PC funciona perfectamente para trabajo y gaming.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Laura García",
-    date: "hace 3 semanas",
-    rating: 5,
-    text: "Super recomendados. Excelente servicio post-venta y soporte técnico.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Pedro Sánchez",
-    date: "hace 1 mes",
-    rating: 5,
-    text: "Muy satisfecho con mi compra. El armado fue rápido y profesional.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "María Torres",
-    date: "hace 1 mes",
-    rating: 5,
-    text: "Grandes profesionales. Me ayudaron a elegir los mejores componentes para mi presupuesto.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Diego Flores",
-    date: "hace 2 meses",
-    rating: 5,
-    text: "Excelente atención y muy buenos precios. Totalmente recomendados.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  },
-  {
-    name: "Julia Ramírez",
-    date: "hace 2 meses",
-    rating: 5,
-    text: "La mejor tienda de computación. Conocen muy bien su trabajo.",
-    avatar: "/placeholder.svg?height=40&width=40"
-  }
 ]
 
 
