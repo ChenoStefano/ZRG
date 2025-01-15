@@ -60,11 +60,11 @@ export default function Home() {
           </section>
         </AnimatedSection>
         <AnimatedSection>
-          <Services/>
-          <GoogleReviews/>
+          <WhyChooseUs />
         </AnimatedSection>
         <AnimatedSection>
-          <WhyChooseUs />
+          <Services/>
+          <GoogleReviews/>
         </AnimatedSection>
         <AnimatedSection>
           <Location />
