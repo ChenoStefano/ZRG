@@ -5,51 +5,51 @@ export default function Services() {
 const services = [
   {
     title: 'PC Gaming',
-    subtitle: 'Custom Build Online',
-    image: '/placeholder.svg?height=200&width=150',
+    subtitle: 'Custom Build',
+    image: '/pc-gamer.png?height=200&width=150',
     link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una PC Gaming personalizada.')}`
   },
   {
-    title: 'PC Empresarial',
-    subtitle: 'Custom Build Online',
-    image: '/placeholder.svg?height=200&width=150',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una PC Empresarial personalizada.')}`
+    title: 'PC Administración',
+    subtitle: 'Computadora para negocios',
+    image: '/pc-adm.png?height=200&width=150',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una PC para administración personalizada.')}`
   },
   {
-    title: 'PC Workstation',
-    subtitle: 'Custom Build Online',
-    image: '/placeholder.svg?height=200&width=150',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una PC Workstation personalizada.')}`
+    title: 'Limpieza de PC',
+    subtitle: 'Deja tu PC como nueva',
+    image: '/limpiar-pc.png?height=200&width=150',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una limpieza de PC.')}`
   },
   {
-    title: 'PC Servidor',
-    subtitle: 'Custom Build Online',
-    image: '/placeholder.svg?height=200&width=150',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar un Servidor personalizado.')}`
+    title: 'Servicio Tecnico',
+    subtitle: 'Arreglamos lo que sea',
+    image: '/servicio-tecnico.png?height=200&width=150',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, necesito reparar mi PC. Problema: .')}`
   },
   {
-    title: 'Procesadores',
-    subtitle: 'Intel y AMD',
-    image: '/placeholder.svg?height=100&width=100',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar Procesadores.')}`
+    title: 'Instalación de OS',
+    subtitle: 'Instalación de la versión de windows que desees',
+    image: '/logos-windows.png?height=100&width=100',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar una instalación de OS.')}`
   },
   {
-    title: 'Memoria RAM',
-    subtitle: 'DDR4 y DDR5',
-    image: '/placeholder.svg?height=100&width=100',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar Memoria RAM.')}`
+    title: 'Instalación de Pack Office',
+    subtitle: 'Word, Excel, PowerPoint, etc...',
+    image: '/office.png?height=100&width=100',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar "instalación Pack Office".')}`
   },
   {
-    title: 'Discos Duros',
-    subtitle: 'SSD y HDD',
-    image: '/placeholder.svg?height=100&width=100',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar Discos Duros.')}`
+    title: 'Combo Actualización',
+    subtitle: 'GPU, CPU, RAM, etc...',
+    image: '/combo.png?height=100&width=100',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar un combo de actualización.')}`
   },
   {
-    title: 'Tarjetas',
-    subtitle: 'Gráficas, RAID, NIC',
-    image: '/placeholder.svg?height=100&width=100',
-    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa cotizar Tarjetas.')}`
+    title: 'GPU',
+    subtitle: 'Gráficas, NVIDIA, AMD',
+    image: '/gpu.png?height=100&width=100',
+    link: `https://wa.me/541150398570?text=${encodeURIComponent('Hola, me interesa saber que tarjetas graficas tienen disponibles.')}`
   },
 ]
 
