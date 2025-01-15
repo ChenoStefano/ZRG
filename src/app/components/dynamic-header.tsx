@@ -82,8 +82,8 @@ export default function DynamicHeader() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#products" onClick={(e) => scrollToSection(e, 'products')} className="text-blue-900 dark:text-blue-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                    Productos
+                  <Link href="/#services" onClick={(e) => scrollToSection(e, 'services')} className="text-blue-900 dark:text-blue-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                    Servicios
                   </Link>
                 </li>
                 <li>
@@ -128,8 +128,8 @@ export default function DynamicHeader() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#products" onClick={(e) => scrollToSection(e, 'products')} className="block py-2 text-blue-900 dark:text-blue-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                    Productos
+                  <Link href="/#services" onClick={(e) => scrollToSection(e, 'services')} className="block py-2 text-blue-900 dark:text-blue-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                    Servicios
                   </Link>
                 </li>
                 <li>
